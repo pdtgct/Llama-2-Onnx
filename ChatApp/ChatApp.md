@@ -7,10 +7,14 @@ Some experience in setting up Python environments is useful, for example we woul
 All of the required packages are listed in the [requirements.txt](requirements.txt) file. You can install them with the following command:
 
 ```bash
-pip install -r requirements.txt
+pip install -r ChatApp/requirements.txt
 ```
 
 You should set the python path to the root directory of the repository so that the modules are found properly.
+
+```bash
+export PYTHONPATH=`pwd`:`pwd`/ChatApp
+```
 
 You should then be able to run the example like this from the root of the repository:
 
@@ -34,3 +38,4 @@ You first must pick the model you want to use, there is a drop down list showing
 You can then select some parameters using the sliders. You should refer to Meta's guidance [here.](https://github.com/facebookresearch/llama/). The defaults are appropriate to get started.
 
 Now you can type some text into the chat window, and Llama 2 will respond. You can start a new conversation, regenerate the last response, or remove the last user-bot turn from the conversation history by pressing the appropriate buttons.
+
